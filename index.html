@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海外フィットネス美女ナビ | IFBB Pro・CrossFit・フィットネスモデル情報</title>
+  <meta name="description" content="海外のIFBB Pro選手・CrossFitアスリート・フィットネスモデルの最新情報を日本語で毎日発信。選手紹介、大会結果、トレーニング哲学まで完全網羅。">
+  <meta name="keywords" content="IFBB Pro,CrossFit,フィットネスモデル,海外フィットネス,女性アスリート,ボディビル,ビキニ,フィギュア,ウェルネス">
+  <meta property="og:title" content="海外フィットネス美女ナビ">
+  <meta property="og:description" content="海外のIFBB Pro・CrossFit・フィットネスモデル情報を日本語で毎日発信">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://musclelove-777.github.io/overseas-fitness-girls/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1550345332-09e3ac987658?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MuscleGirlLove7">
+  <link rel="canonical" href="https://musclelove-777.github.io/overseas-fitness-girls/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-card: #1c2128;
+      --accent: #00bcd4;
+      --accent-dark: #0097a7;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --text-muted: #6e7681;
+      --border: #30363d;
+      --cat-ifbb: #e91e63;
+      --cat-crossfit: #ff9800;
+      --cat-model: #00bcd4;
+      --cat-bikini: #e040fb;
+      --cat-figure: #76ff03;
+      --cat-wellness: #ffd740;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(13, 17, 23, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .logo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .logo span { color: var(--text-primary); }
+
+    nav a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative;
+      height: 70vh;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      margin-top: 60px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1550345332-09e3ac987658?w=1400&h=800&fit=crop') center/cover no-repeat;
+      filter: brightness(0.35);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 24px;
+    }
+
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--accent), #e040fb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto 24px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--bg-primary);
+      padding: 8px 24px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* ===== FILTER NAV ===== */
+    .filter-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 24px 0;
+    }
+
+    .filter-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .filter-btn {
+      padding: 8px 20px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent);
+      color: var(--bg-primary);
+      border-color: var(--accent);
+    }
+
+    /* ===== ATHLETE CARDS ===== */
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      padding-left: 16px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .athletes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+    }
+
+    .athlete-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+
+    .athlete-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 188, 212, 0.15);
+    }
+
+    .card-accent {
+      height: 4px;
+      width: 100%;
+    }
+
+    .card-accent.ifbb { background: var(--cat-ifbb); }
+    .card-accent.crossfit { background: var(--cat-crossfit); }
+    .card-accent.model { background: var(--cat-model); }
+    .card-accent.bikini { background: var(--cat-bikini); }
+    .card-accent.figure { background: var(--cat-figure); }
+    .card-accent.wellness { background: var(--cat-wellness); }
+
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .card-category {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .card-category.ifbb { color: var(--cat-ifbb); }
+    .card-category.crossfit { color: var(--cat-crossfit); }
+    .card-category.model { color: var(--cat-model); }
+    .card-category.bikini { color: var(--cat-bikini); }
+    .card-category.figure { color: var(--cat-figure); }
+    .card-category.wellness { color: var(--cat-wellness); }
+
+    .card-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .card-country {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(0, 188, 212, 0.1);
+      color: var(--accent);
+      border: 1px solid rgba(0, 188, 212, 0.2);
+    }
+
+    .card-sns {
+      display: flex;
+      gap: 10px;
+    }
+
+    .card-sns a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+
+    .card-sns a:hover { color: var(--accent); }
+
+    /* ===== BLOG SECTION ===== */
+    .blog-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+    }
+
+    .blog-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .blog-card:hover { transform: translateY(-3px); }
+
+    .blog-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-body {
+      padding: 16px;
+    }
+
+    .blog-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .blog-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .blog-excerpt {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-brand {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--accent); }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .header-inner { height: 50px; }
+      .logo { font-size: 1.1rem; }
+      nav a { margin-left: 12px; font-size: 0.8rem; }
+      .hero { height: 50vh; min-height: 360px; margin-top: 50px; }
+      .athletes-grid { grid-template-columns: 1fr; }
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "海外フィットネス美女ナビ",
+    "url": "https://musclelove-777.github.io/overseas-fitness-girls/",
+    "description": "海外のIFBB Pro・CrossFit・フィットネスモデル情報を日本語で毎日発信",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MuscleLove"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">FITNESS<span>BEAUTY</span>NAVI</a>
+      <nav>
+        <a href="#athletes">選手一覧</a>
+        <a href="#blog">ブログ</a>
+        <a href="https://x.com/MuscleGirlLove7" target="_blank">X</a>
+        <a href="https://www.patreon.com/MuscleLove" target="_blank">Patreon</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>海外フィットネス美女ナビ</h1>
+      <p>IFBB Pro・CrossFit・フィットネスモデルの最新情報を日本語で毎日お届け。世界で輝く女性アスリートの魅力を徹底紹介。</p>
+      <span class="hero-badge">POWERED BY MUSCLELOVE</span>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <section class="filter-section" id="athletes">
+    <h2 class="section-title">注目の選手たち</h2>
+    <div class="filter-nav">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="ifbb">IFBB Pro</button>
+      <button class="filter-btn" data-filter="crossfit">CrossFit</button>
+      <button class="filter-btn" data-filter="model">Fitness Model</button>
+      <button class="filter-btn" data-filter="bikini">Bikini</button>
+      <button class="filter-btn" data-filter="figure">Figure</button>
+      <button class="filter-btn" data-filter="wellness">Wellness</button>
+    </div>
+  </section>
+
+  <!-- ATHLETES GRID -->
+  <div class="athletes-grid">
+
+    <!-- 1. Andrea Shaw -->
+    <div class="athlete-card" data-category="ifbb">
+      <div class="card-accent ifbb"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1550345332-09e3ac987658?w=400&h=300&fit=crop" alt="Andrea Shaw" loading="lazy">
+      <div class="card-body">
+        <div class="card-category ifbb">IFBB PRO</div>
+        <div class="card-name">Andrea Shaw</div>
+        <div class="card-country">USA</div>
+        <p class="card-desc">Ms. Olympia 3連覇（2020-2022）を達成した現代女子ボディビル界の絶対女王。圧倒的なサイズとコンディションで他を寄せ付けない存在感を放つ。</p>
+        <div class="card-tags">
+          <span class="tag">#MsOlympia</span>
+          <span class="tag">#Bodybuilding</span>
+          <span class="tag">#Champion</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/andreashaw_/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Tia-Clair Toomey -->
+    <div class="athlete-card" data-category="crossfit">
+      <div class="card-accent crossfit"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop" alt="Tia-Clair Toomey" loading="lazy">
+      <div class="card-body">
+        <div class="card-category crossfit">CROSSFIT</div>
+        <div class="card-name">Tia-Clair Toomey</div>
+        <div class="card-country">Australia</div>
+        <p class="card-desc">CrossFit Games史上最多の8回優勝を誇る「Fittest Woman on Earth」。オリンピック重量挙げ選手としても活躍した異次元の万能アスリート。</p>
+        <div class="card-tags">
+          <span class="tag">#CrossFitGames</span>
+          <span class="tag">#FittestOnEarth</span>
+          <span class="tag">#GOAT</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/tiaclair1/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Sommer Ray -->
+    <div class="athlete-card" data-category="model">
+      <div class="card-accent model"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=300&fit=crop" alt="Sommer Ray" loading="lazy">
+      <div class="card-body">
+        <div class="card-category model">FITNESS MODEL</div>
+        <div class="card-name">Sommer Ray</div>
+        <div class="card-country">USA</div>
+        <p class="card-desc">Instagram2,200万フォロワー超え。NPC Bikini選手としてキャリアをスタートし、現在はフィットネス界最大級のインフルエンサーとして君臨。</p>
+        <div class="card-tags">
+          <span class="tag">#FitnessModel</span>
+          <span class="tag">#Instagram</span>
+          <span class="tag">#22M</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/sommerray/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Laura Horvath -->
+    <div class="athlete-card" data-category="crossfit">
+      <div class="card-accent crossfit"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop" alt="Laura Horvath" loading="lazy">
+      <div class="card-body">
+        <div class="card-category crossfit">CROSSFIT</div>
+        <div class="card-name">Laura Horvath</div>
+        <div class="card-country">Hungary</div>
+        <p class="card-desc">2023年CrossFit Games王者。ハンガリー出身のパワフルなアスリートで、2025年Rogue Invitationalでも優勝。Tia不在時の最強候補として注目を集める。</p>
+        <div class="card-tags">
+          <span class="tag">#CrossFitGames</span>
+          <span class="tag">#Hungary</span>
+          <span class="tag">#Champion</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/laurahvth/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Anllela Sagra -->
+    <div class="athlete-card" data-category="model">
+      <div class="card-accent model"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=300&fit=crop" alt="Anllela Sagra" loading="lazy">
+      <div class="card-body">
+        <div class="card-category model">FITNESS MODEL</div>
+        <div class="card-name">Anllela Sagra</div>
+        <div class="card-country">Colombia</div>
+        <p class="card-desc">世界で最も人気のあるフィットネスインフルエンサーの一人。コロンビア出身で、引き締まった美しいボディと明るいキャラクターでファンを魅了する。</p>
+        <div class="card-tags">
+          <span class="tag">#Colombia</span>
+          <span class="tag">#FitnessModel</span>
+          <span class="tag">#Influencer</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/anaborges/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Dana Linn Bailey -->
+    <div class="athlete-card" data-category="figure">
+      <div class="card-accent figure"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=400&h=300&fit=crop" alt="Dana Linn Bailey" loading="lazy">
+      <div class="card-body">
+        <div class="card-category figure">FIGURE</div>
+        <div class="card-name">Dana Linn Bailey</div>
+        <div class="card-country">USA</div>
+        <p class="card-desc">初代Women's Physique Olympiaチャンピオン。IFBB Proとして長年第一線で活躍し、筋トレ系YouTuberとしても大人気。起業家としても成功を収めている。</p>
+        <div class="card-tags">
+          <span class="tag">#WomensPhysique</span>
+          <span class="tag">#Olympia</span>
+          <span class="tag">#YouTube</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/dfrankmd/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Iris Kyle -->
+    <div class="athlete-card" data-category="ifbb">
+      <div class="card-accent ifbb"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&h=300&fit=crop" alt="Iris Kyle" loading="lazy">
+      <div class="card-body">
+        <div class="card-category ifbb">IFBB PRO</div>
+        <div class="card-name">Iris Kyle</div>
+        <div class="card-country">USA</div>
+        <p class="card-desc">Ms. Olympia 10回優勝、Ms. International 7回優勝。女子ボディビル史上最も成功した選手であり、レジェンド中のレジェンド。</p>
+        <div class="card-tags">
+          <span class="tag">#MsOlympia</span>
+          <span class="tag">#Legend</span>
+          <span class="tag">#10xChamp</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/iriskyle/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Kayla Itsines -->
+    <div class="athlete-card" data-category="model">
+      <div class="card-accent model"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=400&h=300&fit=crop" alt="Kayla Itsines" loading="lazy">
+      <div class="card-body">
+        <div class="card-category model">FITNESS MODEL</div>
+        <div class="card-name">Kayla Itsines</div>
+        <div class="card-country">Australia</div>
+        <p class="card-desc">BBGプログラムの創設者。Instagram1,500万フォロワーを超え、Sweatアプリで世界中の女性のフィットネスライフを変革。オーストラリアが誇るフィットネスアイコン。</p>
+        <div class="card-tags">
+          <span class="tag">#BBG</span>
+          <span class="tag">#SweatApp</span>
+          <span class="tag">#Australia</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/kayla_itsines/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. Bakhar Nabieva -->
+    <div class="athlete-card" data-category="wellness">
+      <div class="card-accent wellness"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=300&fit=crop" alt="Bakhar Nabieva" loading="lazy">
+      <div class="card-body">
+        <div class="card-category wellness">WELLNESS</div>
+        <div class="card-name">Bakhar Nabieva</div>
+        <div class="card-country">Azerbaijan / Ukraine</div>
+        <p class="card-desc">「脚の女王」の異名を持つアゼルバイジャン出身のフィットネススター。驚異的な下半身の筋肉量で世界的な注目を集め、Instagram540万フォロワーを獲得。</p>
+        <div class="card-tags">
+          <span class="tag">#LegDay</span>
+          <span class="tag">#Quads</span>
+          <span class="tag">#5.4M</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/bakharnabieva/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Lucy Campbell -->
+    <div class="athlete-card" data-category="crossfit">
+      <div class="card-accent crossfit"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&h=300&fit=crop" alt="Lucy Campbell" loading="lazy">
+      <div class="card-body">
+        <div class="card-category crossfit">CROSSFIT</div>
+        <div class="card-name">Lucy Campbell</div>
+        <div class="card-country">UK</div>
+        <p class="card-desc">2026年CrossFit Open女子部門の優勝者。イギリス出身の新星として急成長中。2026年CrossFit Gamesでの活躍が期待される注目のアスリート。</p>
+        <div class="card-tags">
+          <span class="tag">#CrossFitOpen</span>
+          <span class="tag">#2026Winner</span>
+          <span class="tag">#RisingStar</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/lucycampbell_cf/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. Helle Trevino -->
+    <div class="athlete-card" data-category="ifbb">
+      <div class="card-accent ifbb"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1606889464198-fcb18894cf71?w=400&h=300&fit=crop" alt="Helle Trevino" loading="lazy">
+      <div class="card-body">
+        <div class="card-category ifbb">IFBB PRO</div>
+        <div class="card-name">Helle Trevino</div>
+        <div class="card-country">Denmark / USA</div>
+        <p class="card-desc">デンマーク出身のIFBB Proボディビルダー。Rising Phoenix World Championshipで2度のメダルを獲得。Ms. Olympiaでもトップ争いを繰り広げる実力者。</p>
+        <div class="card-tags">
+          <span class="tag">#RisingPhoenix</span>
+          <span class="tag">#IFBB</span>
+          <span class="tag">#Denmark</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/helletrevino/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Michelle Lewin -->
+    <div class="athlete-card" data-category="bikini">
+      <div class="card-accent bikini"></div>
+      <img class="card-img" src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=400&h=300&fit=crop" alt="Michelle Lewin" loading="lazy">
+      <div class="card-body">
+        <div class="card-category bikini">BIKINI</div>
+        <div class="card-name">Michelle Lewin</div>
+        <div class="card-country">Venezuela</div>
+        <p class="card-desc">ベネズエラ出身のIFBB Bikini Pro選手。Instagram1,600万フォロワーを超え、フィットネス界で最も影響力のある女性の一人。アプリやサプリブランドも展開中。</p>
+        <div class="card-tags">
+          <span class="tag">#BikiniPro</span>
+          <span class="tag">#Venezuela</span>
+          <span class="tag">#16M</span>
+        </div>
+        <div class="card-sns">
+          <a href="https://www.instagram.com/michelle_lewin/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BLOG SECTION -->
+  <section class="blog-section" id="blog">
+    <h2 class="section-title">最新記事</h2>
+    <div class="blog-grid">
+
+      <a class="blog-card" href="articles/tia-clair-toomey-8th-title.html">
+        <img class="blog-img" src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&h=300&fit=crop" alt="Tia-Clair Toomey 8度目の栄冠" loading="lazy">
+        <div class="blog-body">
+          <div class="blog-date">2026-04-04</div>
+          <h3 class="blog-title">Tia-Clair Toomey、史上最多8度目のCrossFit Games制覇の軌跡</h3>
+          <p class="blog-excerpt">2025年CrossFit Gamesで8度目の優勝を果たしたTia-Clair Toomey。オーストラリア出身の彼女がいかにして史上最強の座を不動のものにしたのか、その軌跡を振り返る。</p>
+        </div>
+      </a>
+
+      <a class="blog-card" href="articles/andrea-shaw-ms-olympia-legacy.html">
+        <img class="blog-img" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&h=300&fit=crop" alt="Andrea Shaw Ms. Olympia" loading="lazy">
+        <div class="blog-body">
+          <div class="blog-date">2026-04-04</div>
+          <h3 class="blog-title">Andrea Shaw - Ms. Olympia 3連覇が示す女子ボディビルの新時代</h3>
+          <p class="blog-excerpt">2020年から2022年までMs. Olympiaを3連覇したAndrea Shaw。彼女の登場は女子ボディビル界に新たな美学の基準をもたらした。その功績と影響力に迫る。</p>
+        </div>
+      </a>
+
+      <a class="blog-card" href="articles/crossfit-games-2026-preview.html">
+        <img class="blog-img" src="https://images.unsplash.com/photo-1533681904393-9ab6ebed60d0?w=600&h=300&fit=crop" alt="CrossFit Games 2026プレビュー" loading="lazy">
+        <div class="blog-body">
+          <div class="blog-date">2026-04-04</div>
+          <h3 class="blog-title">2026 CrossFit Games女子展望 - Tia不在で混戦必至の王座争い</h3>
+          <p class="blog-excerpt">Tia-Clair Toomeyが第二子妊娠で2026シーズンを欠場。Lucy CampbellがOpenを制し、Laura Horvathの復帰も噂される中、7月のGamesは大混戦が予想される。</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">FITNESSBEAUTYNAVI by MuscleLove</div>
+      <div class="footer-links">
+        <a href="https://x.com/MuscleGirlLove7" target="_blank">X (@MuscleGirlLove7)</a>
+        <a href="https://www.patreon.com/MuscleLove" target="_blank">Patreon</a>
+        <a href="https://github.com/MuscleLove-777" target="_blank">GitHub</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 MuscleLove. All rights reserved. This site is not affiliated with any athletes or organizations mentioned.</p>
+    </div>
+  </footer>
+
+  <!-- FILTER SCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.athlete-card');
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          cards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
