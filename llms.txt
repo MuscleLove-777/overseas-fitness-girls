@@ -1,0 +1,18 @@
+# 海外フィットネス美女ナビ | IFBB Pro・CrossFit・フィットネスモデル情報
+
+> 海外のIFBB Pro選手・CrossFitアスリート・フィットネスモデルの最新情報を日本語で毎日発信。選手紹介、大会結果、トレーニング哲学まで完全網羅。
+
+## Main Pages
+
+- [overseas fitness girls](https://musclelove-777.github.io/overseas-fitness-girls/): main page of 海外フィットネス美女ナビ | IFBB Pro・CrossFit・フィットネスモデル情報.
+
+## Articles (most recent)
+
+- [tia clair toomey 8th title.html](https://musclelove-777.github.io/overseas-fitness-girls/articles/tia-clair-toomey-8th-title.html): article on 海外フィットネス美女ナビ | IFBB Pro・CrossFit・フィットネスモデル情報.
+- [andrea shaw ms olympia legacy.html](https://musclelove-777.github.io/overseas-fitness-girls/articles/andrea-shaw-ms-olympia-legacy.html): article on 海外フィットネス美女ナビ | IFBB Pro・CrossFit・フィットネスモデル情報.
+- [crossfit games 2026 preview.html](https://musclelove-777.github.io/overseas-fitness-girls/articles/crossfit-games-2026-preview.html): article on 海外フィットネス美女ナビ | IFBB Pro・CrossFit・フィットネスモデル情報.
+
+## About this file
+
+This llms.txt follows the llmstxt.org proposal and lists the main entry points of this site for LLM-based crawlers and AI search agents.
+Generated automatically from sitemap.xml. Source repository: https://github.com/MuscleLove-777/overseas-fitness-girls
