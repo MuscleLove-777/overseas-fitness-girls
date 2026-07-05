@@ -67,6 +67,7 @@ articles/
    - サムネイル: `?w=600&h=300&fit=crop`
 6. **タグ**: 3〜5個、#付き
 7. **SEO**: title, description, og:title, og:type を必ず設定
+8. 全記事とindex.htmlのフッター直前に MuscleLove広告カード（ML_PROMO_CARDマーカー）を必ず含める
 
 ### 記事テーマ例
 - 選手プロフィール紹介
@@ -109,6 +110,18 @@ articles/
       <p>【本文200-400文字】</p>
     </div>
   </article>
+<!-- ML_PROMO_CARD_START -->
+<section style="max-width:800px;margin:32px auto;padding:0 20px;">
+  <div style="background:#111827;border:1px solid rgba(255,255,255,0.14);border-radius:10px;padding:24px;text-align:center;">
+    <p style="margin:0 0 6px;color:#f0f0f5;font-weight:800;">MuscleLove 公式</p>
+    <p style="margin:0 0 14px;color:#9ca3af;font-size:0.9rem;">最新情報・限定コンテンツはこちら</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+      <a href="https://x.com/MuscleGirlLove7" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#1d9bf0;color:#fff;border-radius:6px;font-weight:800;text-decoration:none;">X @MuscleGirlLove7</a>
+      <a href="https://www.patreon.com/MuscleLove" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#ff424d;color:#fff;border-radius:6px;font-weight:800;text-decoration:none;">Patreon 限定コンテンツ</a>
+    </div>
+  </div>
+</section>
+<!-- ML_PROMO_CARD_END -->
   <footer>...</footer>
 </body>
 </html>
