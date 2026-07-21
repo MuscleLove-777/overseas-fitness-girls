@@ -11,43 +11,8 @@
 - Patreon: https://www.patreon.com/MuscleLove
 - GitHub: https://github.com/MuscleLove-777
 
-## 掲載選手リスト
-
-### IFBB Pro
-| 名前 | 国籍 | 特徴 |
-|------|------|------|
-| Andrea Shaw | USA | Ms. Olympia 3連覇 (2020-2022) |
-| Iris Kyle | USA | Ms. Olympia 10回優勝のレジェンド |
-| Helle Trevino | Denmark/USA | Rising Phoenix World Championship メダリスト |
-
-### CrossFit
-| 名前 | 国籍 | 特徴 |
-|------|------|------|
-| Tia-Clair Toomey | Australia | CrossFit Games 8回優勝、GOAT |
-| Laura Horvath | Hungary | 2023 CrossFit Games王者 |
-| Lucy Campbell | UK | 2026 CrossFit Open優勝の新星 |
-
-### Fitness Model
-| 名前 | 国籍 | 特徴 |
-|------|------|------|
-| Sommer Ray | USA | Instagram 2,200万フォロワー |
-| Anllela Sagra | Colombia | 世界最人気フィットネスインフルエンサー |
-| Kayla Itsines | Australia | BBGプログラム・Sweatアプリ創設者 |
-
-### Bikini
-| 名前 | 国籍 | 特徴 |
-|------|------|------|
-| Michelle Lewin | Venezuela | Instagram 1,600万フォロワーのBikini Pro |
-
-### Wellness
-| 名前 | 国籍 | 特徴 |
-|------|------|------|
-| Bakhar Nabieva | Azerbaijan/Ukraine | 「脚の女王」Instagram 540万フォロワー |
-
-### Figure
-| 名前 | 国籍 | 特徴 |
-|------|------|------|
-| Dana Linn Bailey | USA | 初代Women's Physique Olympia王者 |
+## 掲載対象（ロスター）
+記事対象の選手リストは必ず `references/roster.md` を読んで参照すること。リストの追加・更新もそのファイルに対して行う。
 
 ## 記事テンプレート
 
@@ -67,7 +32,7 @@ articles/
    - サムネイル: `?w=600&h=300&fit=crop`
 6. **タグ**: 3〜5個、#付き
 7. **SEO**: title, description, og:title, og:type を必ず設定
-8. 全記事とindex.htmlのフッター直前に MuscleLove広告カード（ML_PROMO_CARDマーカー）を必ず含める
+8. 全記事とindex.htmlのフッター直前に MuscleLove広告カード（ML_PROMO_CARDマーカー）を必ず含める。広告カードにはX / Patreon / ゲームポータルの3導線を必ず入れる
 
 ### 記事テーマ例
 - 選手プロフィール紹介
@@ -118,6 +83,7 @@ articles/
     <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
       <a href="https://x.com/MuscleGirlLove7" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#1d9bf0;color:#fff;border-radius:6px;font-weight:800;text-decoration:none;">X @MuscleGirlLove7</a>
       <a href="https://www.patreon.com/MuscleLove" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#ff424d;color:#fff;border-radius:6px;font-weight:800;text-decoration:none;">Patreon 限定コンテンツ</a>
+      <a href="https://musclelove-games.vercel.app/?utm_source=blog&amp;utm_medium=promo_card&amp;utm_campaign=overseas-fitness-girls" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;background:#22c55e;color:#0b1220;border-radius:6px;font-weight:800;text-decoration:none;">🎮 無料ゲーム95本</a>
     </div>
   </div>
 </section>
